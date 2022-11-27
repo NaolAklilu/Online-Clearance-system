@@ -42,13 +42,14 @@
             width: 60%;
             box-shadow: 0px 0px 4px grey;
             margin: 2em auto;
-        } .navbar-default {
+        }
+
+        .navbar-default {
             background-color: #3b7bbc !important;
             border-color: #e7e7e7;
             color: #FFF !important;
             font-family:Georgia;
         }
-
     </style>
 
     <script>
@@ -90,7 +91,7 @@
                 <img src="/images/logo1.png" alt="aau Logo" />
             </p>
             <div>
-                <h2>AAiT registrar Dashboard</h2>
+                <h2>AAiT sport Dashboard</h2>
             </div>
         </div>
     </nav>
@@ -98,6 +99,7 @@
 
 
         <div class="main-content">
+            
 
             <div class="row form">
                 <h1> You can add new student here.</h1>
@@ -148,6 +150,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row g-3 mt-2 align-items-center">
                         <div class="col-auto">
                             <label for="year" class="col-form-label">year</label>
@@ -191,25 +194,25 @@
                                 </option>
                                 <option value="mechanical engineering">mechanical engineering
                                 </option>
-                                <option value="chemical engineering">chemical engineering
-                                </option>
+                               
                                 ...
                             </select>
                         </div>
                     </div>
+
                     <!-- <div class="row g-3 align-items-center">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" th:field="*{status}" id="cleared"
+                            <input class="form-check-input" type="radio" th:field="*{status}"
                                 th:value=true />
                             <label class="form-check-label" th:for="cleared" >Cleared</label>
 
-                            <input class="form-check-input" type="radio" th:field="*{status}" id="not"
-                            th:value=true />
+                            <input class="form-check-input" type="radio" th:field="*{status}"
+                            th:value=false />
                         <label class="form-check-label" th:for="not" >Not Cleared</label>
             
                         </div>
                     </div> -->
-                    <div class="row g-3 mt-2 align-items-center">
+                    <p class="row g-3 mt-2 align-items-center">
                         Status:
                         <br>
                         <div>
@@ -224,7 +227,8 @@
                             th:field="*{status}" value="false"/>
                             <label class = "form-check-label px-2" for="status">Not Cleared</label>
                         </div>
-                    </div>
+                    </p>
+
                     <!-- <div class="row g-3 mt-2 align-items-center">
                         <div class="col-auto">
                             <label for="Password" class="col-form-label">Password</label>

@@ -1,5 +1,7 @@
-package software.library;
+package software.sport;
 
+
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,11 +13,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/status")
-public class LibraryResource {
+public class SportController {
 
     @Autowired
     private UserRepository userRepo;
 
+    @PostMapping("/user")
+    public void addStudent(@RequestBody User user ){
+        userRepo.save(user);
+    }
 
     @GetMapping("/{email}")
     public Boolean giveStatus(@PathVariable("email") String email){
@@ -29,10 +35,12 @@ public class LibraryResource {
         return null;
     }
 
-    @PostMapping("/user")
-    public void addStudent(@RequestBody User user ){
-        userRepo.save(user);
+    @GetMapping("/users")
+    public List<User> getAllUsers(){
+        return userRepo.findAll();
     }
+
+   
 
     
 }

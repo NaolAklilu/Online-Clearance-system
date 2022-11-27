@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
-    <title>Library </title>
+    <title>Sport </title>
 
     <style>
         * {
@@ -57,23 +57,20 @@
                 <img src="/images/logo1.png" alt="aau Logo" />
             </p>
             <div>
-                <h2>AAiT Library  Dashboard</h2>
+                <h2>AAiT Sport Dashboard</h2>
             </div>
         </div>
     </nav>
-
     <div class="container-fluid">
-    
-       
-
+        
         <div class="main-content">
-         
+            
 
             <div class="row buttons">
                 <div class="col">
                     <form class="row ps-3 pe-3">
                         <a style="margin-top: 1em;" th:href="@{/admin/addStudent}"
-                            class="btn btn-primary col-auto">Add Student</a>
+                            class="btn btn-success col-auto">Add Student</a>
                     </form>
                 </div>
                 <div class="col logout">
@@ -89,16 +86,16 @@
             <div class="table-responsive">
                 <table class="table">
 
-                    <tr>
-                        <th>FULL NAME</th>
-                        <th>Username</th>
-                        <th>DEPARTMENT</th>
-                        <th>YEAR</th>
-                        <th>EMAIL</th>
-                        <th>CLEARANCE STATUS</th>
-                        <th>Edit</th>
-                        <th>Drop</th>
-                    </tr>
+                        <tr>
+                            <td>FULL NAME</td>
+                            <td>Username</td>
+                            <td>DEPARTMENT</td>
+                            <td>YEAR</td>
+                            <td>EMAIL</td>
+                            <td>CLEARANCE STATUS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                         <tr th:each="user: ${users}">
                             <td th:text="${#strings.capitalize(user.firstName) + ' ' + #strings.capitalize(user.lastName)}"></td>
                             <td th:text="${#strings.toUpperCase(user.username)}"></td>

@@ -1,13 +1,13 @@
-package software.library;
+package software.sport;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LibraryApplication {
+public class SportApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LibraryApplication.class, args);
+		SpringApplication.run(SportApplication.class, args);
 	}
 
 }

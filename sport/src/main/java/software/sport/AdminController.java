@@ -1,4 +1,4 @@
-package software.library;
+package software.sport;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -17,12 +17,12 @@ public class AdminController {
     private UserRepository userRepo;
 
     @GetMapping("/")
-    public String getHome(Model model)
-    {
+    public String getHome(Model model){
         List<User> users = new ArrayList<>();
         userRepo.findAll().forEach(users::add);
 
         model.addAttribute("users", users);
+    
         return "admin";
     }
 

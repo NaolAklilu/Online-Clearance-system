@@ -1,4 +1,4 @@
-package software.library;
+package software.sport;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,9 +29,9 @@ public class User {
     private String phone;
 
     
-    private Boolean status = false;
+    private Boolean status;
     private String department;
     private String year;
 
-    
+
 }

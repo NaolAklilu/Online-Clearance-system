@@ -1,10 +1,10 @@
-package software.library;
+package software.sport;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LibraryApplicationTests {
+class SportApplicationTests {
 
 	@Test
 	void contextLoads() {
